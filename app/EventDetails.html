@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="eventsApp">
+<html lang="en" ng-app="coursesApp">
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
@@ -11,7 +11,7 @@
 <body>
 
 <div class="container">
-    <div ng-controller="EventController">
+    <div ng-controller="CoursesController">
         <img ng-src="{{event.imageUrl}}"
         <h2>{{event.name}} <br/></h2>
        <div><strong>Time</strong>{{event.time}} <br/></div>
@@ -29,7 +29,7 @@
 <script src="lib/bootstrap.min.js"></script>
 <script src="lib/angular/angular.js"></script>
 <script src="js/app.js"></script>
-<script src="js/controllers/EventController.js"></script>
+<script src="js/controllers/CoursesController.js"></script>
 
 </body>
 </html>
