@@ -5,21 +5,46 @@
     <title>Registration</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 
 
 </head>
 <body>
 
+
 <div class="container">
-    <div ng-controller="CoursesController">
-        <img ng-src="{{event.imageUrl}}"
-        <h2>{{event.name}} <br/></h2>
-       <div><strong>Time</strong>{{event.time}} <br/></div>
-        <div><strong>Date</strong>{{event.date}}</div>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <ul class="nav">
+
+
+            </ul>
+
+        </div>
+
 
     </div>
 
 
+    <div ng-controller="CoursesController">
+        <img ng-src="{{event.imageUrl}}" alt="{{event.name}}">
+
+        <h2>{{event.name}} <br/></h2>
+
+        <div><strong>Time</strong>{{event.time}} <br/></div>
+        <div><strong>Date</strong>{{event.date}}</div>
+
+
+        <h3>Courses</h3>
+        <ul class="thumbnails">
+            <li ng-repeat="course in event.courses">
+                {{course.name}}
+            </li>
+
+        </ul>
+
+    </div>
 
 </div>
 

@@ -12,10 +12,35 @@ coursesApp.controller('CoursesController',
             time: '10:30 am',
 
 
+            imageUrl: 'img/angularjs-logo.png',
 
-            imageUrl: 'img/angularjs-logo.png'
+            courses: [
+                {
+                    name: 'Core Computer Science',
+                    credits: 'These courses make of the building blocks of the computer science degree.',
+                    selection: '',
+                    logo: ''
+
+                },
+
+                {
+                    name: 'Upper Level Computer Science',
+                    credits: 'These computer science degree courses make of the building blocks of the .',
+                    selection: '',
+                    logo: ''
+                },
+
+                {
+                    name: 'Math',
+                    credits: 'YUour science degree courses make of the building blocks of the computer .',
+                    selection: '',
+                    logo: ''
+                }
+
+
+            ]
+
         }
-
 
 
     }
