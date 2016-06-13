@@ -18,23 +18,23 @@ coursesApp.controller('CoursesController',
                 {
                     name: 'Core Computer Science',
                     credits: 'These courses make of the building blocks of the computer science degree.',
-                    selection: '',
-                    logo: ''
+                    selection: 'null',
+                    logo: 'img/angularjs-logo.png'
 
                 },
 
                 {
                     name: 'Upper Level Computer Science',
                     credits: 'These computer science degree courses make of the building blocks of the .',
-                    selection: '',
-                    logo: ''
+                    selection: 'null',
+                    logo: 'img/angularjs-logo.png'
                 },
 
                 {
                     name: 'Math',
                     credits: 'YUour science degree courses make of the building blocks of the computer .',
-                    selection: '',
-                    logo: ''
+                    selection: 'null',
+                    logo: 'img/angularjs-logo.png'
                 }
 
 
