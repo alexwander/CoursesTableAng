@@ -30,7 +30,7 @@
     <div ng-controller="CoursesController">
         <img ng-src="{{event.imageUrl}}" alt="{{event.name}}">
 
-        <h2>{{event.name}} <br/></h2>
+        <h2 ng-bind="event.name"> <br/></h2>
 
         <div><strong>Time</strong>{{event.time}} <br/></div>
         <div><strong>Date</strong>{{event.date}}</div>
