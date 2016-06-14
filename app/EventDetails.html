@@ -39,7 +39,17 @@
         <h3>Courses</h3>
         <ul class="thumbnails">
             <li ng-repeat="course in event.courses">
-                {{course.name}}
+                <div class="well span9">
+                <h4 class="well-title">{{course.name}}</h4>
+
+                <div><p>{{course.credits}}</p></div>
+                 <div class="courselogo pull-right" >
+                <!--<span>{{course.selection}}</span> <br>-->
+                <img ng-src=" {{course.logo}}"> <br>
+                    <input type="checkbox" ng-model="course.Selected" /> <br>
+                 </div>
+
+                </div>
             </li>
 
         </ul>

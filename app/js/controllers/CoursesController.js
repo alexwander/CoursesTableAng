@@ -19,7 +19,7 @@ coursesApp.controller('CoursesController',
                     name: 'Core Computer Science',
                     credits: 'These courses make of the building blocks of the computer science degree.',
                     selection: 'null',
-                    logo: 'img/angularjs-logo.png'
+                    logo: 'img/logo.png'
 
                 },
 
@@ -27,19 +27,29 @@ coursesApp.controller('CoursesController',
                     name: 'Upper Level Computer Science',
                     credits: 'These computer science degree courses make of the building blocks of the .',
                     selection: 'null',
-                    logo: 'img/angularjs-logo.png'
+                    logo: 'img/logo.png'
                 },
 
                 {
                     name: 'Math',
                     credits: 'YUour science degree courses make of the building blocks of the computer .',
                     selection: 'null',
-                    logo: 'img/angularjs-logo.png'
-                }
+                    logo: 'img/logo.png'
+                }],
+
+        }
 
 
-            ]
+        $scope.checkAll = function () {
+            if ($scope.selectedAll) {
+                $scope.selectedAll = true;
+            } else {
+                $scope.selectedAll = false;
+            }
 
+            angular.forEach($scope.courses, function (course) {
+                course.Selected = $scope.selectedAll;
+            });
         }
 
 
