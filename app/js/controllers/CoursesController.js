@@ -10,10 +10,7 @@ coursesApp.controller('CoursesController',
             name: 'Angular f messsage',
             date: '1/1/1990',
             time: '10:30 am',
-
-
             imageUrl: 'img/angularjs-logo.png',
-
             courses: [
                 {
                     name: 'Core Computer Science',
