@@ -11,7 +11,6 @@
 
 
 <div class="container">
-
     <div class="navbar">
         <div class="navbar-inner">
             <ul class="nav">
@@ -25,34 +24,7 @@
     </div>
 
 
-    <div ng-controller="CoursesController">
-        <img ng-src="{{event.imageUrl}}" alt="{{event.name}}">
 
-        <h2 ng-bind="event.name"><br/></h2>
-
-        <div><strong>Time</strong>{{event.time}} <br/></div>
-        <div><strong>Date</strong>{{event.date}}</div>
-
-
-        <h3>Courses</h3>
-        <ul class="thumbnails">
-            <li ng-repeat="course in event.courses">
-                <div class="well span9">
-                    <h4 class="well-title">{{course.name}}</h4>
-
-                    <div><p>{{course.credits}}</p></div>
-                    <div class="courselogo pull-right">
-                        <!--<span>{{course.selection}}</span> <br>-->
-                        <img ng-src=" {{course.logo}}"> <br>
-                        <input type="checkbox" ng-model="course.Selected"/> <br>
-                    </div>
-
-                </div>
-            </li>
-
-        </ul>
-
-    </div>
 
 </div>
 
